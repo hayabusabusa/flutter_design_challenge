@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
     return SlidingUpPanel(
       // Panel configure
       maxHeight: MediaQuery.of(context).size.height * 0.8,
-      minHeight: MediaQuery.of(context).size.height * 0.2,
+      minHeight: MediaQuery.of(context).size.height * 0.3,
       borderRadius: BorderRadius.only(
         topLeft: Radius.circular(24.0),
         topRight: Radius.circular(24.0),
