@@ -11,7 +11,31 @@ class DayOneApp extends StatelessWidget {
     return MaterialApp(
       title: 'day_one_app',
       theme: ThemeData(
-        // AppBar
+        // Color theme
+        primaryColor: Color(0xFF334AFF),
+        accentColor: Color(0xFFFED000),
+
+        // Text theme
+        textTheme: TextTheme(
+          title: TextStyle(
+            fontSize: 24.0,
+            fontWeight: FontWeight.bold,
+          ),
+          body2: TextStyle(
+            fontSize: 14.0,
+            fontWeight: FontWeight.bold
+          ),
+          body1: TextStyle(
+            fontSize: 14.0,
+            fontWeight: FontWeight.normal
+          ),
+          caption: TextStyle(
+            fontSize: 11.0,
+            fontWeight: FontWeight.normal
+          ),
+        ),
+
+        // AppBar theme
         appBarTheme: AppBarTheme(
           elevation: 0
         )
