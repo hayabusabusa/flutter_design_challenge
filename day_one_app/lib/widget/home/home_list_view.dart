@@ -1,3 +1,4 @@
+import 'package:day_one_app/widget/home/home_list_card.dart';
 import 'package:flutter/material.dart';
 
 class HomeListView extends StatelessWidget {
@@ -42,9 +43,7 @@ class HomeListView extends StatelessWidget {
           ],
         ),
       )
-      : Container(
-        child: Text('item ${index-1}'),
-      );
+      : HomeListCard();
   }
 
   @override

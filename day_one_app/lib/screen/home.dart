@@ -4,6 +4,7 @@ import 'package:day_one_app/widget/home/home_discusion_label.dart';
 import 'package:day_one_app/widget/home/home_image_container.dart';
 import 'package:day_one_app/widget/home/home_list_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class Home extends StatelessWidget {
@@ -46,7 +47,16 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         leading: Builder(
           builder: (BuildContext context) {
-            return Icon(Icons.mood);
+            return Padding(
+              padding: const EdgeInsets.only(left: 24.0),
+              child: Container(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/logo@3.png')
+                  )
+                ),
+              ),
+            );
           },
         ),
         actions: <Widget>[
