@@ -52,7 +52,7 @@ class Home extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/logo@3.png')
+                    image: AssetImage('assets/logo.png')
                   )
                 ),
               ),
